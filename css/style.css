@@ -111,7 +111,7 @@ body {
     padding-right: 20%;
     font-weight: 100;
     text-align: center;
-    font-size: 3.5vmin;
+    font-size: 3vmin;
     line-height: 1.5em;
     opacity: .6;
   }
@@ -129,7 +129,7 @@ body {
   }
   #intro h5{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 70px;
     font-size: 1em;
     font-weight: lighter;
     color:#b6b6b6;
@@ -152,7 +152,7 @@ body {
   }
   #scroll a span {
     position: absolute;
-    top: 600px;
+    top: 630px;
     left: 50%;
     width: 46px;
     height: 46px;
@@ -160,7 +160,9 @@ body {
     border: 1px solid rgb(88, 172, 250);
     border-radius: 100%;
     box-sizing: border-box;
+    
   }
+
   #scroll a span::after {
     position: absolute;
     top: 50%;
@@ -171,10 +173,10 @@ body {
     margin: -12px 0 0 -8px;
     border-left: 1px solid rgb(119, 184, 245);
     border-bottom: 1px solid rgb(119, 184, 245);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    transform: rotateZ(-45deg);
     box-sizing: border-box;
   }
+
   #scroll a span::before {
     position: absolute;
     top: 0;
@@ -186,10 +188,15 @@ body {
     box-shadow: 0 0 0 0 rgba(255,255,255,.1);
     border-radius: 100%;
     opacity: 0;
-    -webkit-animation: sdb03 3s infinite;
     animation: sdb03 3s infinite;
     box-sizing: border-box;
   }
+
+  #scroll a span:hover{
+    transform: rotateZ(360deg);
+    transition: ease .4s;
+  }
+
   @-webkit-keyframes sdb03 {
     0% {
       opacity: 0;
@@ -229,12 +236,9 @@ body {
   font-family: 'Poppins', sans-serif;
   color: rgb(80, 80, 80);
   border: none;
-
 }
 
-
 #scroll-aim h2{
-  
   margin-bottom: 15px;
   font-size: 2.2em;
   color: #363636;
@@ -250,8 +254,6 @@ body {
   font-size: 1em;
 }
 
-
-
 .card{
   height:50vh;
   padding: 50px;
@@ -265,7 +267,6 @@ body {
 .image-wrapper{
   overflow: hidden;
   position:relative;
-  
 }
 
 .image-wrapper img{
@@ -298,32 +299,27 @@ body {
   
 }
 
-
-
-
-
 footer.panel-footer {
   margin-top: 50px;
   padding-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   background-color: rgb(68, 140, 233);
-  
   color:white;
-  min-height: 300px;
-
+  
 }
 
  #say-Hello{
    width:80%;
    margin-left: 10%;
+   margin-bottom: 30px;
  }
 
  #say-Hello h2{
    font-family: 'Poppins',sans-serif;
    font-weight: bold;
-   margin-top :30px;
-
+   margin-top :10px;
  }
+
  #say-Hello p{
   font-family: 'Poppins',sans-serif;
 }
@@ -332,16 +328,83 @@ footer.panel-footer {
   color: rgb(221, 221, 221);
 }
 
-#links{
-  width:80%;
-  margin-left: 10%;
-  margin-top :30px;
-  
+#say-Hello a:hover{
+  color: rgb(255, 255, 255);
 }
 
 #links h2{
  font-family: 'Poppins',sans-serif;
- font-size: 1.4em;
- margin-bottom: 20px;
+ font-size: 1.2em;
+ margin-bottom: 15px;
  margin-top: 20px;
+ margin-left: 10%;
 }
+
+#social ul {
+  padding-left: 0px;
+  margin-left: 8%;
+}
+
+#social li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px;
+}
+
+.fa.fa-facebook, .fa.fa-twitter, .fa.fa-dribbble ,.fa.fa-instagram , .fa.fa-linkedin {
+  font-size: 17px;
+}
+
+.border {
+  background: transparent;
+  outline: none;
+  color:rgba(255,255,255, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 80px;
+  border: 2px solid rgba(255,255,255, 0.3);
+  transition: all .2s ease-in;
+  
+  
+}
+
+.facebook .border:hover {
+  background: #3b5998;
+  border-color: #436aaf;
+  color: rgba(255,255,255, 0.9);
+  transform: scale(1.2);
+}
+
+.behance .border:hover {
+  background: #00aced;
+  border-color: #72c6e6;
+  color: rgba(255,255,255, 0.9);
+  transform: scale(1.2);
+}
+
+.instagram .border:hover {
+  background: #ea4c89;
+  border-color: #ff78ac;
+  color: rgba(255,255,255, 0.9);
+  transform: scale(1.2);
+}
+
+
+.github .border:hover {
+  background: #1fc45e;
+  border-color: #1d9e53;
+  color: rgba(255,255,255, 0.9);
+  transform: scale(1.2);
+}
+
+.linkedin .border:hover {
+  background: #1d2dbb;
+  border-color: #3342c7;
+  color: rgba(255,255,255, 0.9);
+  transform: scale(1.2);
+}
+
+#social ul li {
+  transition: ease .3s;
+}
+
