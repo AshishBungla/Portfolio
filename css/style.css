@@ -89,7 +89,7 @@ body {
   }
 
   #intro {
-    background-image: linear-gradient(to top,#ebf3fa, #ffffff);
+    background-image: linear-gradient(to top,#ececec, #ffffff);
     font-family: 'Poppins' , sans-serif;
     color: #333333;
     height: 100vh;
@@ -99,7 +99,7 @@ body {
     margin: 0px;
     padding-top:290px;
     text-align: center;
-    font-size: 3em;
+    font-size: 6.5vmin;
     font-weight : bold;
     display: block;
   }
@@ -111,7 +111,7 @@ body {
     padding-right: 20%;
     font-weight: 100;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 3.5vmin;
     line-height: 1.5em;
     opacity: .6;
   }
@@ -126,6 +126,13 @@ body {
     font-size: 1.5em;
     line-height: 1.6em;
     opacity: .6;
+  }
+  #intro h5{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    font-weight: lighter;
+    color:#b6b6b6;
   }
   #intro a {
     color: rgb(29, 133, 252);
@@ -222,7 +229,9 @@ body {
   font-family: 'Poppins', sans-serif;
   color: rgb(80, 80, 80);
   border: none;
+
 }
+
 
 #scroll-aim h2{
   
@@ -237,6 +246,12 @@ body {
   color: #a5a5a5;
 }
 
+#scroll-aim p{
+  font-size: 1em;
+}
+
+
+
 .card{
   height:50vh;
   padding: 50px;
@@ -246,7 +261,22 @@ body {
   width:100%;
   height:auto;
 }
+
+.image-wrapper{
+  overflow: hidden;
+  position:relative;
   
+}
+
+.image-wrapper img{
+  transform: scale(1);
+	transition: .3s ease-in-out;
+}
+
+.image-wrapper :hover img{
+  transform: scale(1.14);
+}
+
 #button-read{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -255,7 +285,7 @@ body {
 }
 
 #cardblock{
-  height:250px;
+  height:350px;
   margin-top: 100px;
   margin-bottom: 50px;
   padding: 0px;
@@ -265,7 +295,7 @@ body {
 #card-small{
   background-color: rgb(223, 223, 223); 
   height: 100%;
-  margin-bottom: 20px;
+  
 }
 
 
@@ -273,7 +303,7 @@ body {
 
 
 footer.panel-footer {
-  margin-top: 100px;
+  margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 40px;
   background-color: rgb(68, 140, 233);
@@ -282,21 +312,6 @@ footer.panel-footer {
   min-height: 300px;
 
 }
-
-#behance , #instagram , #linkedin , #github{
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: #ffffff;
- }
- 
- #behance , #instagram , #linkedin , #github:hover {
-   background-color:rgba(197, 197, 197, 0.74);
- }
-
- #behance img , #linkedin img , #github img, #instagram img{
-  padding: 25% 25% 25% 25%; }
-
 
  #say-Hello{
    width:80%;
