@@ -66,69 +66,11 @@ body {
     bottom: 0px;
   }
 
+
   .nav-link:hover::before {
     width: 5%;
   }
 
-
-  .snip1135 {
-    font-family: 'Raleway', Arial, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-  .snip1135 * {
-    box-sizing: border-box;
-  }
-  .snip1135 li {
-    display: inline-block;
-    list-style: outside none none;
-    margin: 0 1.5em;
-    padding: 0;
-  }
-  .snip1135 a {
-    padding: 0.5em 0;
-    color: rgba(65, 65, 65, 0.5);
-    position: relative;
-    letter-spacing: 1px;
-    text-decoration: none;
-  }
-  .snip1135 a:before,
-  .snip1135 a:after {
-    position: absolute;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-  }
-  .snip1135 a:before {
-    bottom: 0;
-    display: block;
-    height: 3px;
-    width: 0%;
-    content: "";
-    background-color: #2980b9;
-  }
-  .snip1135 a:after {
-    left: 0;
-    top: 0;
-    padding: 0.5em 0;
-    position: absolute;
-    content: attr(data-hover);
-    color: #535353;
-    white-space: nowrap;
-    max-width: 0%;
-    overflow: hidden;
-  }
-  .snip1135 a:hover:before,
-  .snip1135 .current a:before {
-    opacity: 1;
-    width: 100%;
-  }
-  .snip1135 a:hover:after,
-  .snip1135 .current a:after {
-    max-width: 100%;
-  }
-  
-  
 
   .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
     border: none;
@@ -147,6 +89,7 @@ body {
 
   #intro {
     background-image: linear-gradient(to top,#ececec, #ffffff);
+    
     font-family: 'Poppins' , sans-serif;
     color: #333333;
     height: 100vh;
@@ -154,23 +97,27 @@ body {
   }
   #intro h1 {
     margin: 0px;
-    padding-top:290px;
+    padding-top:300px;
     text-align: center;
     font-size: 6vmin;
     font-weight : bold;
     display: block;
+    color: #858585;
+    
   }
   #intro h2 {
     margin: 5px;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 50px;
     padding-left: 20%;
     padding-right: 20%;
-    font-weight: 100;
+    
     text-align: center;
-    font-size: 3vmin;
-    line-height: 1.5em;
-    opacity: .6;
+   
+    font-size: 2.8vmin;
+    
+    opacity: .5;
+    
   }
   #intro h4 {
     margin: 0px;
@@ -180,13 +127,14 @@ body {
     padding-right: 25%;
     font-weight: lighter;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2.5vmin;
     line-height: 1.6em;
-    opacity: .6;
+    opacity: .8;
+
   }
   #intro h5{
     text-align: center;
-    margin-top: 85px;
+    margin-top: 110px;
     font-size: 1em;
     font-weight: lighter;
     color:#c4c4c4;
@@ -201,6 +149,10 @@ body {
     display: inline-block;
   }
  
+
+
+}
+
  /* SCROLL OPTION */
 
   #scroll a {
@@ -208,7 +160,7 @@ body {
   }
   #scroll a span {
     position: absolute;
-    top: 630px;
+    bottom: 80px;
     left: 50%;
     width: 46px;
     height: 46px;
@@ -284,30 +236,53 @@ body {
     }
   }
   
+
+#heading{
+  text-align: center;
+  color: #303030;
+  padding-top: 80px;
+  font-size: 4vmin;
+  font-weight: 600;
+
+}
+
+
 /* ---SCROLL OPTION --- */
   
 #scroll-aim{
-  padding-top: 140px;
-  padding-bottom: 10px;
+  padding-top: 150px;
+  padding-bottom: 50px;
   font-family: 'Poppins', sans-serif;
   color: rgb(80, 80, 80);
   border: none;
+  
 }
 
 #scroll-aim h2{
   margin-bottom: 15px;
-  font-size: 2.2em;
-  color: #363636;
+  margin-top: 45px;
+  font-size: 1.8em;
+  
+  color: #000000;
+  font-weight: medium;
 }
 #scroll-aim h3{
   
-  margin-bottom: 25px;
-  font-size: 1.3em;
-  color: #a5a5a5;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: rgb(148, 148, 148);
+}
+
+#scroll-aim h6{
+  
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: rgb(148, 148, 148);
 }
 
 #scroll-aim p{
   font-size: .9em;
+  color: #797979;
 }
 
 .card{
@@ -350,9 +325,8 @@ body {
 
 
 #cardblock{
-  height:350px;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  height:50vh;
+  margin: 50px 20px 50px 20px;
   padding: 0px;
   background-color:rgb(218, 218, 218);
 }
@@ -460,7 +434,7 @@ footer.panel-footer {
 }
 
 .linkedin .border:hover {
-  background: #3a48c4;
+  background:  #0072b1;
   border-color: #3342c7;
   color: rgba(255,255,255, 0.9);
   transform: scale(1.2);

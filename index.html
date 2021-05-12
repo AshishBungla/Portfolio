@@ -9,10 +9,14 @@
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="css/style.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-        <meta property="og:image" content="images/Preview.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="scripts/script.js"></script>
+        
 
         <title>Ashish Bungla</title>
         <link rel="icon" href="images/logo-title-01.png" type="image/icon type"  >
@@ -34,7 +38,7 @@
                         <a class="nav-link" href="./views/about.html"data-hover="About Me" >About Me</a>
                       </li>
                       <li >
-                        <a class="nav-link" href="#" data-hover="Projects">Projects</a>
+                        <a class="nav-link" href="./views/project1.html" data-hover="Projects">Projects</a>
                       </li>
                       <li >
                         <a class="nav-link" href="#" data-hover="Resume">Resume </a>
@@ -46,32 +50,40 @@
         </header>
 
         <div id="intro">
-            <h1><a href="about.html">Hi, I'm Ashish Bungla</a></h1> 
-            <h2> Product Designer & Architecture Student </h2>
-           
+            <h1>Hi, I'm <a href="about.html">Ashish Bungla</a></h1> 
+        
+            <h2> Product Designer & Architecture Junior</h2>
+
+            <!--<h4>I'm a design enthusiast who loves to design & create impactful experiences.</h4>
+            -->
             <section id="scroll" class="demo">
               
               <a href="#scroll-aim">
                 <span></span>
               </a>
             </section>
-            <h5>See my recent work</h5>
+            
          </div>
 
-         <div id="scroll-aim">
+
+         
+         <div id="scroll-aim" style="margin-top: 50px;">
             <div class="container col-lg-9 col-md-11 col-12" >
               <div class="row justify-content-evenly ">
-                <div class="col-11 col-md-5 mb-5">
+                <div class="col-11 col-md-5 mb-5" data-aos = "fade-right">
                   <div class= "image-wrapper">
                     <a href="#">
-                      <img src='images/1.jpg' id="case">
+                      <img src='images/b.png' id="case">
                     </a>
                     </div>
                 </div>
               
-                <div class="col-11 col-md-6">
-                  <h3>Product Design</h3>
-                  <h2>Project Title 1</h2>
+                <div class="col-11 col-md-6" data-aos = "fade-left">
+                  
+                  <h3>Product Design </h3>
+                  <h2>Project TripHill</h2>
+                  
+                  
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                   </p>
                   <a href="#" type="button" class="btn btn-outline-dark" id="button-read" >Read More</a>
@@ -82,18 +94,18 @@
 
          <div id="scroll-aim" style="background-color:rgb(240, 240, 240);">
           <div class="container col-lg-9 col-md-11 col-12" >
-            <div class="row justify-content-evenly ">
-              <div class="col-11 col-md-5 mb-5">
+            <div class="row justify-content-evenly">
+              <div class="col-11 col-md-5 mb-5" data-aos = "fade-right">
                 <div class= "image-wrapper">
                   <a href="#">
-                    <img src='images/1.jpg' id="case">
+                    <img src='images/b.png' id="case">
                   </a>
                   </div>
               </div>
             
-              <div class="col-11 col-md-6">
-                <h3>Product Design</h3>
-                <h2>Project Title 2</h2>
+              <div class="col-11 col-md-6" data-aos = "fade-left">
+                <h3>UI/UX Design</h3>
+                <h2>Microsoft Design Challenge 2020</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                 </p>
                   <a href="#" type="button" class="btn btn-outline-dark" id="button-read" >Read More</a>
@@ -104,16 +116,16 @@
        <div id="scroll-aim" >
         <div class="container col-lg-9 col-md-11 col-12" >
           <div class="row justify-content-evenly ">
-              <div class="col-11 col-md-5 mb-5">
-                <div class= "image-wrapper">
+              <div class="col-11 col-md-5 mb-5" data-aos = "fade-right">
+                <div class= "image-wrapper" >
                   <a href="#">
-                    <img src='images/1.jpg' id="case">
+                    <img src='images/b.png' id="case">
                   </a>
                   </div>
               </div>
-            <div class="col-11 col-md-6">
-              <h3>Product Design</h3>
-              <h2>Project Title 3</h2>
+            <div class="col-11 col-md-6" data-aos = "fade-left">
+              <h3>UI/UX Design</h3>
+              <h2>Project Medule</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
               </p>
                 <a href="#" type="button" class="btn btn-outline-dark" id="button-read" >Read More</a>
@@ -121,10 +133,11 @@
           </div>
         </div>
      </div> 
+         
 
         <div class="container">
           <div class="row justify-content-center">
-              <div class="row col-12 col-md-9 " id="cardblock">  
+              <div class="col-12 col-md-10 " id="cardblock">  
             </div>
           </div>
         </div>
@@ -180,6 +193,7 @@
        
      
       
-         
+        
+      
     </body>
 </html>

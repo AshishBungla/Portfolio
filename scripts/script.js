@@ -1,14 +1,10 @@
 $(document).ready(function(){
+  AOS.init({
+    offset: 220, 
+    delay: 0, 
+    duration: 800
+  });
 
-  function hideLoader() {
-    $('#loading').hide();
-  }
-  
-  $(window).ready(hideLoader);
-  
-  // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-  setTimeout(hideLoader, 20 * 1000);
-  
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -24,13 +20,13 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 200, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
-  });
+    } 
+  }); 
 });
 
 
