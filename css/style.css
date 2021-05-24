@@ -40,24 +40,25 @@ body {
 }
 
   #nav-list {
-   
-    margin: 0px;
+    margin: 10px;
     font-family: 'Poppins', sans-serif;
   }
   #nav-list a {
     color: #303030;
     text-align: center;
     font-size: .9em;
-    padding: 10px 20px 0px 50px;
+    padding: 10px 20px 7px 40px;
     opacity: .5;
   }
 
   #nav-list a:hover {
+    transition: 800ms;
     opacity: 1;
+
   }
 
   .nav-link::before {
-    transition: 300ms;
+    transition: 800ms;
     height: 3px;
     content: "";
     position: absolute;
@@ -65,7 +66,6 @@ body {
     width: 0%;
     bottom: 0px;
   }
-
 
   .nav-link:hover::before {
     width: 5%;
@@ -79,12 +79,15 @@ body {
   .navbar-header button.navbar-toggle {
     margin-top: 20px;
   }
+
   .navbar-default button.navbar-toggle .icon-bar {
     background-color: rgb(43, 156, 248);
   } 
+  
   .navbar-header button.navbar-toggle:hover, .navbar-header button.navbar-toggle:active {
     margin-top: 10px;
-    background-color: #e4e6e6;
+    background-color: #e6e4e6;
+  
   }
 
   #intro {
@@ -149,9 +152,6 @@ body {
     display: inline-block;
   }
  
-
-
-}
 
  /* SCROLL OPTION */
 
@@ -295,6 +295,7 @@ body {
   height:auto;
 }
 
+
 .image-wrapper{
   overflow: hidden;
   position:relative;
@@ -322,7 +323,54 @@ body {
   border-color:rgb(68, 140, 233); ;
 }
 
+#project-section{
+  margin: 120px 0px 50px 0px;
+  
+}
 
+#project-section h1{
+  text-align: center;
+  margin-bottom: 80px;
+  color: #383838;
+  font-family: 'Poppins' , sans-serif;
+  
+}
+
+#project-card{
+  margin: 30px 10px 40px 10px ;
+  padding:0px;
+  height: max-content;
+  font-family: 'Poppins' , sans-serif;
+  border: none;
+  box-shadow: 0 6px 10px 0 rgba(187, 187, 187, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.19);
+  transform: scale(1);
+  transition: .1s ease-in-out;
+}
+
+#project-card p{
+  font-size: 0.9rem;
+  padding :0px 5px 10px 5px;
+  color: #424242;
+}
+
+#project-card:hover{
+  transform: scale(1.03);
+}
+
+#project-card h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 15px;
+  padding :0px 5px 0px 5px;
+  color: #000000;
+}
+
+#project-card h5{
+  color: #868686;
+  font-size: 0.9rem;
+  padding : 10px;
+  padding :0px 5px 0px 5px;
+}
 
 #cardblock{
   height:50vh;
@@ -336,6 +384,8 @@ body {
   height: 100%;
   
 }
+
+
 
 footer.panel-footer {
   margin-top: 50px;
