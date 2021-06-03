@@ -387,7 +387,50 @@ body {
 }
 
 
+#top-img{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  color: rgb(68, 68, 68);
+  font-size: 20px;
+  font-weight:bold;
+  padding: 15px 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(187, 187, 187, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.19);
+}
 
+#top-img:hover{
+background-color: rgba(65, 65, 65, 0.74);
+color:rgb(255, 255, 255);
+
+transition: .2s ease-in-out;
+
+}
+#low-img{
+  left: 50%;
+ 
+  background-color: rgb(255, 255, 255);
+  color: rgb(29, 133, 252);
+  justify-self: center;
+  font-size: 20px;
+  font-weight:bold;
+  padding: 15px 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(187, 187, 187, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.19);
+  border: 2px solid rgb(43, 156, 248);
+}
+
+#low-img:hover{
+background-color: rgba(43, 156, 248, 0.993);
+color:rgb(255, 255, 255);
+
+transition: .2s ease-in-out;
+
+}
 footer.panel-footer {
   margin-top: 50px;
   padding-top: 50px;
