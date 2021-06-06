@@ -251,7 +251,7 @@ body {
 /* ---SCROLL OPTION --- */
   
 #scroll-aim{
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 50px;
   font-family: 'Poppins', sans-serif;
   color: rgb(80, 80, 80);
@@ -259,9 +259,18 @@ body {
   
 }
 
+#scroll-aim h1{
+  margin-bottom: 100px;
+  margin-top: 45px;
+  font-size: 2.2em;
+  
+  color: #a5a5a5;
+  font-weight: medium;
+}
+
 #scroll-aim h2{
   margin-bottom: 15px;
-  margin-top: 45px;
+  margin-top: 20px;
   font-size: 1.8em;
   
   color: #000000;
@@ -277,13 +286,17 @@ body {
 #scroll-aim h6{
   
   margin-bottom: 5px;
-  font-size: 0.9em;
-  color: rgb(148, 148, 148);
+  font-size: 0.8em;
+  color: rgb(110, 110, 110);
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
 }
 
 #scroll-aim p{
-  font-size: .9em;
+  font-size: 1em;
   color: #797979;
+  margin-top: 20px;
 }
 
 .card{
@@ -338,7 +351,7 @@ body {
 }
 
 #project-card{
-  margin: 30px 10px 40px 10px ;
+  margin: 30px 10px 70px 10px ;
   padding:0px;
   height: max-content;
   font-family: 'Poppins' , sans-serif;
@@ -351,7 +364,7 @@ body {
 #project-card p{
   font-size: 0.9rem;
   padding :0px 5px 10px 5px;
-  color: #424242;
+  color: #757575;
 }
 
 #project-card:hover{
@@ -360,7 +373,7 @@ body {
 
 #project-card h2{
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 15px;
   padding :0px 5px 0px 5px;
   color: #000000;
@@ -386,10 +399,9 @@ body {
   
 }
 
-
 #top-img{
   position: absolute;
-  top: 55%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255);
@@ -399,13 +411,12 @@ body {
   padding: 15px 40px;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(187, 187, 187, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.19);
+  box-shadow: 0 15px 30px 0 rgba(187, 187, 187, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.19);
 }
 
 #top-img:hover{
 background-color: rgba(65, 65, 65, 0.74);
 color:rgb(255, 255, 255);
-
 transition: .2s ease-in-out;
 
 }
@@ -420,14 +431,13 @@ transition: .2s ease-in-out;
   padding: 15px 40px;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(187, 187, 187, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.19);
-  border: 2px solid rgb(43, 156, 248);
+  box-shadow: 0 15px 30px 0 rgba(187, 187, 187, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.19);
+  border: 2px solid rgb(68, 140, 233);
 }
 
 #low-img:hover{
-background-color: rgba(43, 156, 248, 0.993);
+background-color: rgb(68, 140, 233);
 color:rgb(255, 255, 255);
-
 transition: .2s ease-in-out;
 
 }

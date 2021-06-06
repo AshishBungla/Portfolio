@@ -1,8 +1,8 @@
 $(document).ready(function(){
   AOS.init({
-    offset: 220, 
+    offset: 150, 
     delay: 0, 
-    duration: 800
+    duration: 700
   });
 
   // Add smooth scrolling to all links
