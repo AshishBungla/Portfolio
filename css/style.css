@@ -355,7 +355,7 @@ body {
   height: max-content;
   font-family: 'Poppins' , sans-serif;
   border: none;
-  box-shadow: 0 6px 10px 0 rgba(187, 187, 187, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.19);
+  box-shadow: 0 10px 16px 0 rgba(134, 134, 134, 0.219), 0 6px 20px 0 rgba(226, 226, 226, 0.19);
   transform: scale(1);
   transition: .1s ease-in-out;
 }
