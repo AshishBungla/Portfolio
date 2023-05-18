@@ -90,14 +90,18 @@ body {
   }
 
   #intro {
-    background-image: linear-gradient(to top,#ececec, #ffffff);
-    font-family: 'Poppins' , sans-serif;
-    color: #333333;
-    height: 100vh;
-    margin: 0px;
-    text-align: center;
-    padding-top:220px;
-    
+  background-image: linear-gradient(to top, #ececec, #ffffff);
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  height: calc(100vh - 60px);
+  margin: 0px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
   }
   #intro h1 {
     margin: 0px;
